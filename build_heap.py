@@ -30,6 +30,7 @@ def main():
         data = list((map(int, input().strip().split())))
         assert len(data) == elements, "Neprecizs elementu daudzums"
         swaps = build_heap(data)
+        print(len(swaps))
         for i, j in swaps:
             print(i, j)
         
@@ -43,6 +44,7 @@ def main():
                 swaps = build_heap(data)
             
             assert len(data) == elements , "Neprecizs elementu daudzums"
+
             print(len(swaps))
             for i, j in swaps:
                 print(i, j)
