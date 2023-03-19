@@ -36,7 +36,7 @@ def main():
     elif tekstaievade.__contains__("F"):
         nos = input()
         if "a" not in nos:
-            fails = "tests/" + nos
+            fails = "/tests" + nos
             with open(fails,"r") as f:
                 elements = int(f.readline())
                 data = list((map(int, f.readline().strip().split())))
