@@ -36,9 +36,9 @@ def main():
     elif tekstaievade.__contains__("F"):
         nos = input()
         if "a" not in nos:
-            fails = "/tests" + nos
-            with open(fails,"r") as f:
-                elements = int(f.readline())
+            fails = "tests/" + nos
+            with open(fails,"r", encoding="utf-8") as f:
+                elements = int(f.readline().strip())
                 data = list((map(int, f.readline().strip().split())))
                 swaps = build_heap(data)
             
